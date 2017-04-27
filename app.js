@@ -10,6 +10,8 @@ var users = require('./routes/users');
 
 var app = express();
 
+//禁用Express 的X-Powered-By 头信息
+app.disable('x-powered-by');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
